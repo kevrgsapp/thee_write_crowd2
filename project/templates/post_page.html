@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div>
+    <!-- <h1 class="title"></h1> -->
+    <h1 class="title" style="font-size: 3em;">{{ post.title }}</h1> 
+    <h1 class="title" style="font-size: 1.8em;">By: <a href="{{url_for('main.user_page', username=post.author.username)}}">{{ post.author.username }}</a></h1>
+    <h2 class="subtitle" style="font-size:1.5em">{{ post.subtitle }}</h2>
+    <h4>Made on {{ ptime }}</h4>
+    <h4>{{ post.wordcount }} words</h4>
+    <h4>Category: {{ post.category }}</h4>
+    <p>{{ post.body }}</p>
+    {% if post.author.username == current_user.username %}
+    <form method="POST" action="{{ url_for('main.post_edit',id=post.id) }}"><button class="button edit">Edit</button></form>
+    <form method="POST" action="/post_delete"><button class="button delete">DELETE</button><input style='display:none;' type="text" name="id" value="{{ post.id }}"></form>
+    {% endif %}
+</div>
+{% endblock %}

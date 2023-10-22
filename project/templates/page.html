@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+        {% with messages = get_flashed_messages(category_filter=["is-success"]) %}
+            {% if messages %}
+            <div class="notification is-success">
+                {% for msg in messages %}
+                <p>{{ msg }}</li>
+                {% endfor %}
+            </div>
+            {% endif %}
+        {% endwith %}
+        {% with messages = get_flashed_messages(category_filter=["error"]) %}
+            {% if messages %}
+            <div class="notification is-danger">
+                {% for msg in messages %}
+                <p>{{ msg }}</li>
+                {% endfor %}
+            </div>
+            {% endif %}
+        {% endwith %}
+    <table>
+        <tr valign="top">
+            <td><img src="{{ user.avatar(128) }}"></td>
+            <td><table id = "profile_info_page">
+                <tr>
+                    <td><h2>Name: {{ user.name }}</h1></td>
+                </tr>
+                <tr>
+                    <td><h1>Username: {{ user.username }}</h1></td>
+                </tr>
+                <tr>
+                    <td><h2>Member Since {{ utime }}</h2><td>
+                </tr>
+                <tr>
+                    <td><h2>Audience: {{ followers }}</h2><td>
+                </tr>
+                <tr><td>
+                    {% if not current_user.is_following(user) %}
+                        {% if not current_user==user %}
+                    <p>
+                        <form action="{{ url_for('main.follow', username=user.username) }}" method="post">
+              
+                            <button class="button">Follow</button>
+                        </form>
+                    </p>
+                    {% endif %}
+                    {% else %}
+                    <p>
+                        <form action="{{ url_for('main.unfollow', username=user.username) }}" method="post">
+                          
+                            <button class="button">Unfollow</button>
+                        </form>
+                    </p>
+                    {% endif %}
+                </td></tr>
+            </table></td>
+        </tr>
+    </table>
+    <hr>
+    <div class="grid-container">
+        {% if plen > 0 %}
+            {% for i in range(plen) %}
+                {% include '_post.html' %}
+            {% endfor %}
+        {% endif %}
+    </div>
+{% endblock %}

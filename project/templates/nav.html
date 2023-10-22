@@ -1,0 +1,32 @@
+<a href="{{ url_for('main.index') }}" class="navbar-item home-nav" >
+    Home
+</a>
+<a href="{{ url_for('main.feed') }}" class="navbar-item feed-nav" >
+    Feed
+</a>
+<a href="{{ url_for('main.discover') }}" class="navbar-item discover-nav" >
+    Discover
+</a>
+{% if current_user.is_authenticated %}
+<a href="{{ url_for('main.user_page', username=current_user.username) }}" class="navbar-item profile-nav" >
+    My Page
+</a>
+{% endif %}
+{% if not current_user.is_authenticated %}
+<a href="{{ url_for('auth.login') }}" class="navbar-item login-nav" >
+    Login
+</a>
+<a href="{{ url_for('auth.signup') }}" class="navbar-item signup-nav" >
+        Sign Up
+</a>
+{% endif %}
+{% if current_user.is_authenticated %}
+<a href="{{ url_for('auth.logout') }}" class="navbar-item logout-nav" >
+    Logout
+</a>
+{% endif %}
+{% if current_user.is_authenticated %}
+<a href="{{ url_for('main.profile') }}" class="navbar-item avatar-nav">
+    <img src="{{ current_user.avatar(56) }}"/>
+</a>
+{% endif %}

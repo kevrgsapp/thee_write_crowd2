@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.9.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#DAD9D9;}
+	.st1{fill:#FFFFFF;}
+</style>
+<g>
+	<circle cx="297.89" cy="420.88" r="72.75"/>
+	<polygon class="st0" points="269.77,373.62 287.47,373.62 291.72,380.15 266.37,380.15 	"/>
+	<polygon class="st0" points="308.52,373.62 326.22,373.62 330.47,380.15 305.12,380.15 	"/>
+	<g>
+		<g>
+			<path class="st1" d="M298.14,377.62h-24.71c0,0-14.04,1.12-24.15,23.03c-12.36,26.4-25.27,53.91-0.56,56.72
+				c23.03,0,33.7-29.76,33.7-29.76l15.72-0.98"/>
+			<line class="st1" x1="282.42" y1="427.6" x2="298.14" y2="426.62"/>
+		</g>
+		<g>
+			<path class="st1" d="M297.86,377.62h24.71c0,0,14.04,1.12,24.15,23.03c12.36,26.4,25.27,53.91,0.56,56.72
+				c-23.03,0-33.7-29.76-33.7-29.76l-15.72-0.98"/>
+			<line class="st1" x1="313.58" y1="427.6" x2="297.86" y2="426.62"/>
+		</g>
+	</g>
+	<circle class="st0" cx="284.1" cy="415.25" r="8.99"/>
+	<circle cx="318.92" cy="407.39" r="8.99"/>
+	<circle cx="270.62" cy="398.4" r="6.18"/>
+	<circle class="st0" cx="299.26" cy="386.05" r="6.18"/>
+	<circle class="st0" cx="291.4" cy="397.28" r="1.68"/>
+	<circle class="st0" cx="320.6" cy="390.54" r="2.81"/>
+	<circle class="st0" cx="329.59" cy="396.59" r="2.81"/>
+	<circle class="st0" cx="329.59" cy="386.05" r="2.81"/>
+	<circle class="st0" cx="336.89" cy="390.54" r="2.81"/>
+	<ellipse class="st0" cx="299.83" cy="402.05" rx="3.37" ry="1.4"/>
+</g>
+</svg>

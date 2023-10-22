@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+$cutive: "Cutive Mono", mono;
+
+// Set your brand colors
+$purple: #8A4D76;
+$pink: #FA7C91;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+
+$brown: #81591d;
+$rose-pink: #EBB8DD;
+$white: #FFFFFF;
+$fuchsia: #a23fa2;
+$ebony: #56573D;
+$ebony-light: #90916d;
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $beige-light;
+$link: $brown;
+
+// Update some of Bulma's component variables
+$control-border-width: 2px;
+$input-background-color: $beige-lighter;
+$input-border-color: transparent;
+$input-shadow: none;
+
+@import "../bulma/bulma.sass";
+
+// rules to override the original
+.hero-head{
+    background-color: $ebony;
+    color:$beige-lighter;
+}
+
+.hero-head.logo {
+    width: 100px;
+    height: 100px;
+    background-image:("../../assets/logos/logo_1.svg");
+    background-size:cover;
+}
+
+.hero-head.logo {
+    width: 100px;
+    height: 100px;
+    background-image:("../../assets/logos/logo_2updated.svg");
+    background-size:cover;
+}
+
+button.button {
+    background-color: $link;
+    color: $beige-light;
+}
+
+.navbar-item:hover {
+    background-color: $ebony-light;
+}
+a.navbar-item.home-nav, a.navbar-item.profile-nav, a.navbar-item.login-nav, a.navbar-item.signup-nav, a.navbar-item.logout-nav, a.navbar-item.avatar-nav, a.navbar-item.feed-nav, a.navbar-item.discover-nav {
+    background-color: $ebony;
+}
+a.navbar-item.home-nav:hover, a.navbar-item.profile-nav:hover, a.navbar-item.login-nav:hover, a.navbar-item.signup-nav:hover, a.navbar-item.logout-nav:hover, a.navbar-item.avatar-nav:hover, a.navbar-item.feed-nav:hover, a.navbar-item.discover-nav:hover {
+    background-color: $ebony-light;
+}
+
+body {
+    font-family: $cutive;
+    font-weight: bold;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-container {
+    // grid-template-columns: 10px 10px;
+    // grid-gap: 1em;
+    display:block;
+}
+
+.post {
+    display:inline-grid;
+    width: fit-content;
+    max-width: 200px;
+    max-height: 500px;
+    background-color: $beige-light;
+    border:$ebony-light 5px solid;
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin: 8px 2px;
+}
+
+.box {
+  background-color: $ebony-light;
+}
+
+
+
+
+.dropdown {
+    display:none
+}
+
+#profile_info_page td {
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
+
+@media screen and (max-width: 1023px){
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: $ebony-light;}
+  
+.dropdown:hover .dropdown-content {display: block; left:0px}
+  
+.dropdown:hover .dropbtn {background-color: $ebony;}
+}
+
+.profile-menu:hover {
+color: #90916D;
+}
+
+img.cat-ico{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -110px;
+    opacity: 60%;
+}

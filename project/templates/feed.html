@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1 class="title" style="color:black;font-size:4em;">
+      Feed
+    </h1>
+    <h2 class="subtitle" style="color:#555;font-size:2em;">
+      Posts of those you follow.
+    </h2>
+    <br><br><br><br><br><br><br><br>
+    {% for i in range(plen) %}
+      {% include '_post.html' %}
+    {% endfor %}
+    {% if prev_url %}
+      <a href="{{ prev_url }}">Newer posts</a>
+    {% endif %}
+    {% if next_url %}
+      <a href="{{ next_url }}">Older posts</a>
+    {% endif %}
+  
+{% endblock %}

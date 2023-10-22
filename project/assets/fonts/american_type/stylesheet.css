@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'ITC American Typewriter Std';
+    src: url('AmericanTypewriterStd-Cond.eot');
+    src: local('ITC American Typewriter Std Condensed'), local('AmericanTypewriterStd-Cond'),
+        url('AmericanTypewriterStd-Cond.eot?#iefix') format('embedded-opentype'),
+        url('AmericanTypewriterStd-Cond.woff2') format('woff2'),
+        url('AmericanTypewriterStd-Cond.woff') format('woff'),
+        url('AmericanTypewriterStd-Cond.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC American Typewriter Std';
+    src: url('AmericanTypewriterStd-LtCnd.eot');
+    src: local('ITC American Typewriter Std Light Condensed'), local('AmericanTypewriterStd-LtCnd'),
+        url('AmericanTypewriterStd-LtCnd.eot?#iefix') format('embedded-opentype'),
+        url('AmericanTypewriterStd-LtCnd.woff2') format('woff2'),
+        url('AmericanTypewriterStd-LtCnd.woff') format('woff'),
+        url('AmericanTypewriterStd-LtCnd.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC American Typewriter Std';
+    src: url('AmericanTypewriterStd-BdCnd.eot');
+    src: local('ITC American Typewriter Std Bold Condensed'), local('AmericanTypewriterStd-BdCnd'),
+        url('AmericanTypewriterStd-BdCnd.eot?#iefix') format('embedded-opentype'),
+        url('AmericanTypewriterStd-BdCnd.woff2') format('woff2'),
+        url('AmericanTypewriterStd-BdCnd.woff') format('woff'),
+        url('AmericanTypewriterStd-BdCnd.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC American Typewriter Std';
+    src: url('AmericanTypewriterStd-Bold.eot');
+    src: local('ITC American Typewriter Std Bold'), local('AmericanTypewriterStd-Bold'),
+        url('AmericanTypewriterStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AmericanTypewriterStd-Bold.woff2') format('woff2'),
+        url('AmericanTypewriterStd-Bold.woff') format('woff'),
+        url('AmericanTypewriterStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC American Typewriter Std';
+    src: url('AmericanTypewriterStd-Med.eot');
+    src: local('ITC American Typewriter Std Medium'), local('AmericanTypewriterStd-Med'),
+        url('AmericanTypewriterStd-Med.eot?#iefix') format('embedded-opentype'),
+        url('AmericanTypewriterStd-Med.woff2') format('woff2'),
+        url('AmericanTypewriterStd-Med.woff') format('woff'),
+        url('AmericanTypewriterStd-Med.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC American Typewriter Std';
+    src: url('AmericanTypewriterStd-Light.eot');
+    src: local('ITC American Typewriter Std Light'), local('AmericanTypewriterStd-Light'),
+        url('AmericanTypewriterStd-Light.eot?#iefix') format('embedded-opentype'),
+        url('AmericanTypewriterStd-Light.woff2') format('woff2'),
+        url('AmericanTypewriterStd-Light.woff') format('woff'),
+        url('AmericanTypewriterStd-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

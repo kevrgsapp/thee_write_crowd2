@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="column">
+    <h3 class="title">Edit Post</h3>
+    <div class="box">
+        <form method="POST" action="/post_edit_post">
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="text" value="{{ post.title }}" name="title" placeholder="Title" autofocus="">
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="text" value="{{ post.subtitle }}" name="subtitle" placeholder="Subtitle" autofocus="">
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <select class="input is-large" value="category" name="category" autofocus="">
+                        <option value=none>Category</option>
+                        <option value=bio>Biography</option>
+                        <option value=blog>Blog</option>
+                        <option value=childrens>Childrens</option>
+                        <option value=fantasy>Fantasy</option>
+                        <option value=horror>Horror</option>
+                        <option value=mystery>Mystery</option>
+                        <option value=religon>Religon</option>
+                        <option value=romance>Romance</option>
+                        <option value=thriller>Thriller</option>
+                        <option value=young_adult>Young Adult</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <textarea class="input is-large" type="text" name="body" placeholder="Body Text" rows="20" cols="50" style='font-size:1rem;' autofocus="">{{ post.body }}</textarea>
+                </div>
+            </div>
+            <input style='display:none;' type="text" name="id" value="{{ post.id }}">
+
+            <button class="button is-block is-large is-fullwidth">Submit</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

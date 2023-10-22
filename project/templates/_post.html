@@ -1,0 +1,40 @@
+<a class="post" href="{{ url_for('main.post_page',p=posts[i].id) }}">
+    <table>
+        <tr style="font-size: 1.25em;">
+            <td><h2>{{ posts[i].title }}</h1></td>
+        </tr>
+        <tr style="font-size: 0.75em;">
+            <td><h1>{{ posts[i].subtitle }}</h1></td>
+        </tr>
+        {% if posts[i].category=='bio' %}
+            <img class="cat-ico" src="{{ url_for('static', filename='bw_icons/bio.svg') }}"/>
+        {% endif %}
+        {% if posts[i].category=='blog' %}
+            <img class="cat-ico" src="{{ url_for('static', filename='bw_icons/blog.svg') }}"/>
+        {% endif %}
+        {% if posts[i].category=='children' %}
+            <img class="cat-ico" src="{{ url_for('static', filename='bw_icons/children.svg') }}"/>
+        {% endif %}
+        {% if posts[i].category=='fantasy' %}
+            <img class="cat-ico" src="{{ url_for('static', filename='bw_icons/fantasy.svg') }}"/>
+        {% endif %}
+        {% if posts[i].category=='horror' %}
+            <img class="cat-ico" src="{{ url_for('static', filename='bw_icons/horror.svg') }}"/>
+        {% endif %}
+        {% if posts[i].category=='mystery' %}
+            <img class="cat-ico" src="{{ url_for('static', filename='bw_icons/mystery.svg') }}"/>
+        {% endif %}
+        {% if posts[i].category=='religion' %}
+            <img class="cat-ico" src="{{ url_for('static', filename='bw_icons/religion.svg') }}"/>
+        {% endif %}
+        {% if posts[i].category=='romance' %}
+            <img class="cat-ico" src="{{ url_for('static', filename='bw_icons/romance.svg') }}"/>
+        {% endif %}
+        {% if posts[i].category=='thriller' %}
+            <img class="cat-ico" src="{{ url_for('static', filename='bw_icons/thriller.svg') }}"/>
+        {% endif %}
+        {% if posts[i].category=='young_adult' %}
+            <img class="cat-ico" src="{{ url_for('static', filename='bw_icons/young_adult.svg') }}"/>
+        {% endif %}
+    </table>
+</a>

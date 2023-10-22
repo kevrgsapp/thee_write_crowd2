@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<img src="{{ user.avatar(128) }}" id="avatar-img"/>
+<h1 class="title">
+  Welcome, {{ user.name }}
+</h1>
+<h2 class="profile-menu">
+  <a href="{{ url_for('main.profile_edit') }}">Edit Profile</a>
+</h2>
+<h2 class="profile-menu">
+  <a href="{{ url_for('main.user_page', username=user.username) }}">My Page</a>
+</h2>
+<h2 class="profile-menu">
+  <a href="{{ url_for('main.post') }}">New Post</a>
+</h2>
+{% endblock %}

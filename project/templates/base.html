@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thee Write Crowd</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}"/>
+
+</head>
+
+<body>
+    
+    <section class="hero is-primary is-fullheight">
+
+        <div class="hero-head">
+            <nav class="navbar" style="height: 100px;">
+                <div class="dropdown" id="dropdown-nav">
+                    <img src="{{ url_for('static', filename='logos/logo2updated.svg') }}" style="width:80px;position:relative;top:1em;">
+                        <div class="dropdown-content">
+                            {% include 'nav.html' %}
+                        </div>
+                </div>
+                <div class="container">
+                    <div id="navbarMenuHeroA" class="navbar-menu">
+                        <img src="{{ url_for('static', filename='logos/logo_1.svg') }}" style="width:200px;position:absolute;left:42%;top:-75%"/>
+                        <div class="navbar-end">
+                            {% include 'nav.html' %}
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="hero-body">
+            <div class="container has-text-centered">
+               {% block content %}
+               {% endblock %}
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
